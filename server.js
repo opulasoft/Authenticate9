@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
     .sync() // Sync database models
     .then(async () => {
       console.log("Database Connected sucessfully."); 
-      randomData.generateRandomData();
+     // randomData.generateRandomData();
       // Start server
       app.listen(port, () => {
         console.log(`Server is running on port ${port}`); // Log server start message
